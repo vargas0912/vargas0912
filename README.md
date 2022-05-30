@@ -1,10 +1,27 @@
-- 👋 Hi, I’m @vargas0912
-- 👀 I’m interested in Angular programming
-- 🌱 I’m currently learning TypeScript
-- 💞️ I’m looking to collaborate on 
-- 📫 How to reach me ...
+```js
+package main
 
-<!---
-vargas0912/vargas0912 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+import (
+	"fmt"
+)
+
+type Bio map[string]string
+
+func main() {
+	for k, v := range GetBio() {
+		fmt.Printf("%+v: %+v\n", k, v)
+	}
+}
+
+func GetBio() Bio {
+	return Bio{
+		"- ⚡ Quick bio:":                    "",
+		"- 🔭 I’m currently working on":      "Senior Software Developer",
+		"- 🌱 I’m currently learning":        "JS, TS, MongoDB, NodeJS, Express, HTML, CSS, Angular, D365FO",
+		"- 👯 I’m looking to collaborate on": "JavaScript, Angular, MongoDB",
+		"- 🤔 I’m looking for help with":     "Anything related to what I am currently learning 😅",
+		"- 💬 Ask me about":                  "D365, PHP, Angular, SQL, Software Design & Architecture, Web-Dev",
+		"- 📫 How to reach me:":              "https://github.com/vargas0912/vargas0912",
+	}
+}
+```
